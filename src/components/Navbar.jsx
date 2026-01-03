@@ -10,7 +10,7 @@ return(
     }}>
         <b>App({role})</b>
         <input placeholder="Search..."
-        onCharge={(e)=>setFilters(prev=>({...prev,search:e,target.value}))} />
+        onCharge={(e)=>setFilters(prev=>({...prev,search:e.target.value}))} />
         <button onClick={logout}>Logout</button>
         </div>
 );
